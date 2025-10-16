@@ -28,7 +28,10 @@ namespace Calculator
                 {
                     Console.Write("Enter your choice: ");
                     if (int.TryParse(Console.ReadLine(), out choice) && choice >= 1 && choice <= 7)
+                    {
                         break;
+                    }
+                        
                     Console.WriteLine("Not a valid operator. Please select again.");
                 }
 
@@ -93,7 +96,9 @@ namespace Calculator
                     answer = Console.ReadLine().Trim().ToLower();
 
                     if (answer == "y" || answer == "n")
+                    {
                         break;
+                    }
 
                     Console.WriteLine("Invalid input. Please enter 'y' or 'n'.");
                 }
